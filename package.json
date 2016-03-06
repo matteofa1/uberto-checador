@@ -1,9 +1,10 @@
 {
   "name": "uberto-checador",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "linting": "semistandard",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +14,8 @@
     "expres": "0.0.5",
     "express": "^4.13.4",
     "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "semistandard": "7.0.5"
   }
 }

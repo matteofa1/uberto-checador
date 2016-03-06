@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /*!
  * Modules and dependencies
@@ -23,19 +23,17 @@ const publicPath = Path.join(__dirname, 'app/public/');
 app.use(Morgan('tiny'));
 app.use(Express.static(publicPath));
 
-
 /*!
  * Routing
  */
 
-app.get('/', (req,res) => {
-	var indexPath = Path.join(__dirname, 'app/public/index.html');
-	
-	res.sendFile(indexPath);
+app.get('/', (req, res) => {
+  var indexPath = Path.join(__dirname, 'app/public/index.html');
+  res.sendFile(indexPath);
 });
 
-app.post('/process-vehicle', (req,res) => {
-	res.send('hola camion procesado');
+app.post('/process-vehicle', (req, res) => {
+  res.send('hola camion procesado');
 });
 
 /*!
@@ -43,5 +41,5 @@ app.post('/process-vehicle', (req,res) => {
  */
 
 app.listen(3000, () => {
-	console.log("servidor corriendo en el puerto 3000");
+  console.log('servidor corriendo en el puerto 3000');
 });
